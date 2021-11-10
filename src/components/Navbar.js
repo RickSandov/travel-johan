@@ -29,7 +29,7 @@ export default function Navbar() {
                     <div className="group">
                         <div className="link">
                             <Link className="main-link" to="/viajes">Viajes</Link>
-                            <Link to="/">Crear Viaje</Link>
+                            <Link to="/viajes/crear">Crear Viaje</Link>
                             <Link to="/viajes/historial">Historial de viajes</Link>
 
                         </div>

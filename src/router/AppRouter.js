@@ -19,6 +19,8 @@ import Trips from "../components/pages/Trips";
 import TripsHistory from "../components/pages/TripsHistory";
 import RecoverPwd from "../components/pages/RecoverPwd";
 import SetPwd from "../components/pages/SetPwd";
+import CreateTrip from "../components/pages/CreateTrip";
+import EditTrip from "../components/pages/EditTrip";
 
 export default function AppRouter() {
     return (
@@ -31,6 +33,8 @@ export default function AppRouter() {
                     <Route exact path="/" element={<Home />} />
                     <Route exact path="/pagos" element={<Payments />} />
                     <Route exact path="/viajes" element={<Trips />} />
+                    <Route exact path="/viajes/crear" element={<CreateTrip />} />
+                    <Route exact path="/viajes/editar/:id" element={<EditTrip />} />
                     <Route exact path="/clientes/crear-cliente" element={<CreateClient />} />
                     <Route exact path="/clientes/editar/:id" element={<EditClient />} />
                     <Route exact path="/clientes" element={<Clients />} />
