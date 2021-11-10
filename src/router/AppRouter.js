@@ -17,6 +17,8 @@ import Passports from "../components/pages/Passports";
 import Payments from "../components/pages/Payments";
 import Trips from "../components/pages/Trips";
 import TripsHistory from "../components/pages/TripsHistory";
+import RecoverPwd from "../components/pages/RecoverPwd";
+import SetPwd from "../components/pages/SetPwd";
 
 export default function AppRouter() {
     return (
@@ -36,6 +38,8 @@ export default function AppRouter() {
                     <Route exact path="/viajes/historial" element={<TripsHistory />} />
                     <Route exact path="/crear-gasto" element={<CreateSpending />} />
                     <Route exact path="/crear-pago" element={<CreatePayment />} />
+                    <Route exact path="/recuperar" element={<RecoverPwd />} />
+                    <Route exact path="/restablecer" element={<SetPwd />} />
 
                     <Navigate path="/login" element={<Login />} />
                 </Routes>

@@ -1,6 +1,7 @@
 
 
-export default function Login() {
+export default function RecoverPwd() {
+
     return (
         <div className="login-page">
             <div className="login-card">
@@ -8,15 +9,11 @@ export default function Login() {
                     <img src="./logo.png" alt="" className="logo" />
                 </div>
                 <form className="login-card__form">
-                    <div className="inputs">
-                        <input placeHolder="Nombre de usuario" type="text" />
-                        <input placeHolder="Contraseña" type="password" name="pwd" id="pwd" />
-                        <span className="fgt">
-                            Recuperar contraseña
-                        </span>
+                    <div className="inputs" style={{ marginBottom: '13rem' }}>
+                        <input placeHolder="Correo electrónico" type="text" />
                     </div>
                     <button className="btn">
-                        Iniciar sesión
+                        Enviar
                     </button>
                 </form>
             </div>
